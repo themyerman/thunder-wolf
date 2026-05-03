@@ -629,6 +629,12 @@ footer {
 
 footer a { color: var(--gray); }
 
+.footer-ein {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-top: 0.25rem;
+}
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .nav-links { display: none; }
