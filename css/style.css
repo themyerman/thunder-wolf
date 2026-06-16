@@ -710,6 +710,113 @@ nav {
   .donate-qr p { margin-top: 0; }
 }
 
+/* ── News Splash (homepage) ── */
+.news-splash {
+  background: var(--offwhite);
+  border-top: 3px solid var(--teal);
+  padding-block: 2rem 2.25rem;
+}
+
+.news-splash-inner {
+  max-width: 860px;
+}
+
+.news-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--teal);
+  margin-bottom: 0.5rem;
+}
+
+.news-splash-inner h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.news-splash-inner p {
+  color: var(--gray);
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 700px;
+  margin-bottom: 1.25rem;
+}
+
+.news-photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.news-photos img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.news-link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--rose);
+}
+
+.news-link:hover { text-decoration: underline; }
+
+@media (max-width: 600px) {
+  .news-photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Timeline featured item ── */
+.timeline-item--featured {
+  grid-column: 1 / -1;
+  border-left: none !important;
+  padding-left: 0 !important;
+  border-bottom: 2px solid var(--teal);
+  display: block;
+  padding-bottom: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-item--featured .timeline-date {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.timeline-item--featured p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: var(--black);
+}
+
+.timeline-photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.timeline-photos img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .timeline-photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* ── Footer ── */
 footer {
   padding-block: 2rem;
