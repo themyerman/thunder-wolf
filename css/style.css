@@ -163,6 +163,11 @@ nav {
   align-items: center;
 }
 
+.event-spotlight-inner--no-poster {
+  grid-template-columns: 1fr;
+  max-width: 680px;
+}
+
 .event-poster img {
   width: 100%;
   border-radius: 8px;
